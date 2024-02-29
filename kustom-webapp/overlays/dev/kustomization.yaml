@@ -3,9 +3,13 @@ bases:
 
 patches:
  - replicas.yaml
-namePrefix:
-  kustom-
   
 configMapGenerator:
 - name: mykustom-map
   env: config.properties
+
+namePrefix:
+  kustom-
+
+nameSuffix:
+  -v1
